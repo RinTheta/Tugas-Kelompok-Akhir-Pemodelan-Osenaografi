@@ -23,7 +23,7 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 
 
 2. Ketikan (pip install + nama librray yang digunakan (selengkapnya dapat di cek di bawah))
-> [image](https://user-images.githubusercontent.com/102911269/169704739-8550e56f-e503-41f4-897f-eaa4a86b5c9a.png)
+> ![image](https://user-images.githubusercontent.com/102911269/169704739-8550e56f-e503-41f4-897f-eaa4a86b5c9a.png)
 
 3. Enter untuk run tunggu hingga selesai dan ulangi langkah yang sama untuk library lainnya
 > ![image](https://user-images.githubusercontent.com/102911269/169704754-446896b6-30f6-4f09-990b-cec8387c8547.png)
