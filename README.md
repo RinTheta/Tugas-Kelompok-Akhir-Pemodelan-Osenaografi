@@ -109,7 +109,7 @@ Pada modul ini library yang digunakan adalah library Matplotlib dan Siphon
 
 > Library Siphon merupakan kumpulan penggunaan Python untuk mengunduh data dari layanan data jarak jauh dan mudah diintegrasikan ke dalam alur kerja yang dibangun menggunakan ekosistem Python ilmiah, termasuk proyek Numpy, Scipy, dan Matplotlib, serta dengan perpustakaan MetPy Unidata, yang merupakan kumpulan alat dalam Python untuk membaca, memvisualisasikan, dan melakukan perhitungan dengan data cuaca.
 
-Masukkan persamaan dengan menggunakan library yang sebelumnya telah ditambahkan dalam modul ini. Masukkan pula stasiun yang akan dituju, misalnya NWPR1 (Newport, Rhode Island, USA)
+Masukkan persamaan dengan menggunakan library yang sebelumnya telah ditambahkan dalam modul ini. Masukkan pula stasiun yang akan dituju, misalnya NWPR1 (Newport, Rhode Island, USA).
 
 ![image](https://user-images.githubusercontent.com/105922284/169758512-74b4529c-94a0-4a85-96d8-1c7fb3d3ee1f.png)
 
@@ -121,7 +121,7 @@ Masukkan persamaan yang memuat parameter kecepatan angin dan arah angin.
 
 ![image](https://user-images.githubusercontent.com/105922284/169758891-d49679f1-1726-4808-8d04-6252de15b0ad.png)
 
-Masukkan persamaan yang memuat parameter suhu perairan
+Masukkan persamaan yang memuat parameter suhu perairan.
 
 ![image](https://user-images.githubusercontent.com/105922284/169758961-8351a61e-7908-4acf-99ef-8258f90830bb.png)
 
@@ -132,4 +132,4 @@ Maka, script dapat dijalankan untuk mendapatkan hasil berupa grafik visualisasi 
 ### **Hasil**
 > ![image](https://user-images.githubusercontent.com/105922284/169754981-ffc8c40c-abd2-4348-a2de-82d2e68add8e.png)
 
-Berdasarkan Hasil yang didapat dapat disimpulkan bahwa terjadi korelasi antara parameter tekanan air, angin, dan suhu perairan. Angin dihasilkan oleh perbedaan tekanan dan suhu di atmosfer akibat distribusi energi radiasi matahari, tutupan awan serta dinamika disekitarnya. Angin menghantarkan kandungan panas terutama dengan proses adveksi massa air hangat ke daerah dingin dan sebaliknya (Aldrian, 2008). Proses perubahan suhu di lautan terjadi jauh lebih lambat daripada di atmosfer. Sebagai akibat maka lautan terus panas meskipun ekuinok atau titik nadir matahari telah menjauhi garis khatulistiwa.
+Berdasarkan Hasil yang didapat dapat disimpulkan bahwa terjadi korelasi antara parameter tekanan air, angin, dan suhu perairan. Angin dihasilkan oleh perbedaan tekanan dan suhu di atmosfer akibat distribusi energi radiasi matahari, tutupan awan serta dinamika disekitarnya. Angin menghantarkan kandungan panas terutama dengan proses adveksi massa air hangat ke daerah dingin dan sebaliknya (Aldrian, 2008). Ketika lautan mendingin, maka laut akan merespon dengan menghasilkan gerak konveksi vertikal yang akan mensuplai panas ke permukaan. Hal ini terjadi karena persamaan kontinuitas massa membutuhkan air dingin mengendap ke kedalaman dari permukaan tergantikan oleh massa air di bawahnya yang notabene lebih hangat. Air hangat tersebut akan menyembul ke permukaan. Proses perubahan suhu di lautan terjadi jauh lebih lambat daripada di atmosfer. Sebagai akibat maka lautan terus panas meskipun ekuinok atau titik nadir matahari telah menjauhi garis khatulistiwa.
