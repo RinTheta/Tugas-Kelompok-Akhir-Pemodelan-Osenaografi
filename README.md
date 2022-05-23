@@ -125,6 +125,10 @@ Masukkan persamaan yang memuat parameter suhu perairan
 
 ![image](https://user-images.githubusercontent.com/105922284/169758961-8351a61e-7908-4acf-99ef-8258f90830bb.png)
 
+Maka, script dapat dijalankan untuk mendapatkan hasil berupa grafik visualisasi yang memuat grafik tekanan, kecepatan dan arah angin, dan suhu perairan.
+
+![image](https://user-images.githubusercontent.com/105922284/169759306-d75c97c2-5877-4042-ab0f-37d8ccf53beb.png)
+
 ### **Hasil**
 > ![image](https://user-images.githubusercontent.com/105922284/169754981-ffc8c40c-abd2-4348-a2de-82d2e68add8e.png)
 
