@@ -1,4 +1,4 @@
-# **Tugas Kelompok Akhir Pemodelan Oseanaongrafi**
+# **Tugas Kelompok Akhir Pemodelan Oseanografi**
 Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi tahun 2022. Bahasa pemograman yang digunakan dalam repositori ini adalah bahasa pemograman Python yang dapat dikerjakan pada text editor Google Colaboratory, Visual Studio Code  dan Jupyter Notebook. Modul yang digunakan pada repositori ini adalah matplotlib, numpy, dan sys.
 
 # **Kelompok 22**
@@ -102,5 +102,14 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa
 
 ### **Penjelasan Coding**
 
-### **Hasil**
+![image](https://user-images.githubusercontent.com/105922284/169753571-b9ddc764-0370-453c-be02-6ab0d177787e.png)
 
+Pada modul ini library yang digunakan adalah library Matplotlib dan Siphon
+> Library Matplotlib merupakan library yang digunakan untuk menjalankan visualisasi data dan pustaka plot grafis untuk Python
+
+> Library Siphon merupakan kumpulan penggunaan Python untuk mengunduh data dari layanan data jarak jauh. Siphon dapat dengan mudah diintegrasikan ke dalam alur kerja yang dibangun menggunakan ekosistem Python ilmiah, termasuk proyek Numpy, Scipy, dan Matplotlib, serta dengan perpustakaan MetPy Unidata, yang merupakan kumpulan alat dalam Python untuk membaca, memvisualisasikan, dan melakukan perhitungan dengan data cuaca.
+
+### **Hasil**
+> ![image](https://user-images.githubusercontent.com/105922284/169754981-ffc8c40c-abd2-4348-a2de-82d2e68add8e.png)
+
+Berdasarkan Hasil yang didapat dapat disimpulkan bahwa 
