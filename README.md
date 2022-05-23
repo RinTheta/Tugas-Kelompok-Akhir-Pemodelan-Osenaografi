@@ -65,9 +65,9 @@ fungsi def digunakan untuk mendefinisikan penggunaan angka dalam satuan persen d
 ![image](https://user-images.githubusercontent.com/102911269/169703150-ace83883-daae-4011-aca6-509d71e9a1b8.png)
 
 Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, dan dy
-> C merupakan koefisien difusi
+> C merupakan kecepatan aliran
 
-> ad merupakan 
+> ad merupakan parameter yang menunjukkan koefisen difusi
 
 > Arah arus yang digunakan didefinisikan dalam bentuk arah derajat
 
@@ -79,7 +79,7 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 
 > dx merupakan parameter yang menunjukan
 
-> dymerupakan parameter yang menunjukan
+> dy merupakan parameter yang menunjukan
 
 ![image](https://user-images.githubusercontent.com/102911269/169703304-f34c6edf-fde4-4075-9993-7d23a080d1ff.png)
 
@@ -87,6 +87,7 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 ### **Hasil**
 > ![ezgif com-gif-maker](https://user-images.githubusercontent.com/102911269/169705494-142fc028-55fd-4464-9595-cfb69ba51802.gif)
 
+Berdasarkan Hasil yang didapat dapat disimpulkan bahwa 
 
 # **Modul 3 Hidrodinamika 1 Dimensi**
 ### **Materi**
