@@ -1,4 +1,4 @@
-# **Tugas Kelompok Akhir Pemodelan Osenaografi**
+# **Tugas Kelompok Akhir Pemodelan Oseanaongrafi**
 Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi tahun 2022. Bahasa pemograman yang digunakan dalam repositori ini adalah bahasa pemograman Python yang dapat dikerjakan pada text editor Google Colaboratory, Visual Studio Code  dan Jupyter Notebook. Modul yang digunakan pada repositori ini adalah matplotlib, numpy, dan sys.
 
 # **Kelompok 22**
