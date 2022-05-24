@@ -52,18 +52,6 @@ Pada model adveksi difusi 2 Dimensi, terdapat 2 persamaan pembangun dalam penera
 
 Adveksi Model 2D
 > Persamaan dasarnya yaitu
-
-
-> ![image](https://user-images.githubusercontent.com/105927463/169943453-98c3d7f7-a9f8-402e-84db-8e9010463ef9.png).
-
-Difusi Model 2D
-> Persamaan dasarnya yaitu
-
-> ![image](https://user-images.githubusercontent.com/105927463/169943703-8292b982-5006-4a8e-8c4c-48627880ac13.png)
-
-Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveksi-difusi yang membentuk persamaan model 2D di alam, dimana perlu adanya diskritisasi untuk kedua persamaan tersebut.
-
-
 > ![image](https://user-images.githubusercontent.com/105927463/169943453-98c3d7f7-a9f8-402e-84db-8e9010463ef9.png).
   
 Difusi Model 2D
@@ -72,30 +60,10 @@ Difusi Model 2D
 		
 Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveksi-difusi yang membentuk persamaan model 2D di alam, dimana perlu adanya diskritisasi untuk kedua persamaan tersebut.
 		
-
 Diskritisasi merupakan suatu metode untuk mencari solusi persamaan secara numerik dari persamaan matematis sehingga dapat dibentuk menjadi dimensi ruang dan waktu.
 Untuk Diskritisasinya dapat menggunakan metode upstream (Eksplisit) dimana persamaan beda hingga menggunakan pendekatan beda maju untuk turunan waktu dan untuk turunan ruang menggunakan dengan menggunakan arah kecepatan u.ika u > 0 maka turunan terhadap ruang menggunakan pendekatan beda mundur, sebaliknya jika u < 0 digunakan pendekatan beda maju.
 >Persamaan dari metode diskritisasi untuk suku adveksi 2D adalah sebagai berikut :
 >![image](https://user-images.githubusercontent.com/105927463/169944973-9f25a4a3-09b4-467d-9141-bf3c1dc08cc5.png)
-
-
-Dan untuk mekanisme transpor difusi  2D dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang. Indeks n untuk waktu, indeks i untuk ruang, dan koefisiesn difusi AD dianggap konstan terhadap ruangdan waktu.
->Persamaan dari metode diskritisasi untuk suku difusi 2D adalah sebagai berikut :
-
->![image](https://user-images.githubusercontent.com/105927463/169945106-060f17cf-d4ba-4603-a366-9749f1fb956e.png)
-
-Dan dari kedua diskritisasi berikut digabungkan untuk mendapatkan proses adveksi difusi 2D dengan hasil sebagai berikut
->![image](https://user-images.githubusercontent.com/105927463/169945255-ffa3121e-9104-4ca1-8430-892ba357e5bb.png)
-
-Untuk Pernerapan di Bidang Oseanografi itu sendiri Modul Adveksi Difusi 2D ini dapat digunakan untuk
->1.Mengetahui Persebaran Polutan di Laut dan memodelkannya
-
->2.Mengetahui Persebaran Nutrient di laut dan memodelkannya
-
->3.Mengetahui Persebaran kebocoran atau tumpahan minyak di lautan
-
->4.Memodelkan penyebaran polutan yang tersebar dari hasil limbah industry dari sungai ke laut
-
 		
 Dan untuk mekanisme transpor difusi 2D dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang. Indeks n untuk waktu, indeks i untuk ruang, dan koefisiesn difusi AD dianggap konstan terhadap ruangdan waktu.
 >Persamaan dari metode diskritisasi untuk suku difusi 2D adalah sebagai berikut :
@@ -112,7 +80,6 @@ Dan dari kedua diskritisasi berikut digabungkan untuk mendapatkan proses adveksi
 >3.Mengetahui Persebaran kebocoran atau tumpahan minyak di lautan
 		
 >4.Memodelkan penyebaran polutan yang tersebar dari hasil limbah industry dari sungai ke laut
-
 
 
 ### **Penjelasan Coding**
