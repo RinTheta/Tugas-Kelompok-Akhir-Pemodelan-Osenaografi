@@ -139,13 +139,13 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa
 
 ### **Hasil**
 
-![1](https://user-images.githubusercontent.com/106040998/169938957-dc305df3-7c7a-4028-994e-5ac71299455c.png)
+![1 1](https://user-images.githubusercontent.com/106040998/169955243-4ab3e2f5-54a3-4c00-832f-9254afa806db.png)
 
-![2](https://user-images.githubusercontent.com/106040998/169939003-d0969581-935e-4373-a4e7-eadb93c70092.png)
+![2 2](https://user-images.githubusercontent.com/106040998/169955270-dbb5f9e7-92e2-46ff-94de-207ee9b6bda0.png)
 
-![3](https://user-images.githubusercontent.com/106040998/169939043-b17c9ae3-6dba-4bb1-bcbe-e9e0516f291c.png)
+![3 3](https://user-images.githubusercontent.com/106040998/169955315-08f10ae4-406d-41c0-87d5-6e76a49ca600.png)
 
-![4](https://user-images.githubusercontent.com/106040998/169939090-e012ec27-2fb1-441a-9947-a8e3a469e394.png)
+![4 4](https://user-images.githubusercontent.com/106040998/169955350-35d5eba3-6262-46a4-a309-ddb71f261989.png)
 
 
 # **Modul 4 Hidrodinamika 2 Dimensi**
