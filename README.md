@@ -98,12 +98,19 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa
 
 ![2022-05-24_094215](https://user-images.githubusercontent.com/106040998/169937924-ab936413-a85b-4fbd-9da2-3e6979bbfbec.png)
 
-![2022-05-24_094420](https://user-images.githubusercontent.com/106040998/169938156-db82f5b4-6cf1-44e2-bbaa-328fc461cb24.png)
+![kec arus dalam waktu](https://user-images.githubusercontent.com/106040998/169938817-717bda93-9b08-48f0-9211-6a5c66ac1f1d.png)
 
-![2022-05-24_094612](https://user-images.githubusercontent.com/106040998/169938443-7eed74f5-a8c6-41b3-abd4-80137b0fdf92.png)
 
 
 ### **Hasil**
+
+![1](https://user-images.githubusercontent.com/106040998/169938957-dc305df3-7c7a-4028-994e-5ac71299455c.png)
+
+![2](https://user-images.githubusercontent.com/106040998/169939003-d0969581-935e-4373-a4e7-eadb93c70092.png)
+
+![3](https://user-images.githubusercontent.com/106040998/169939043-b17c9ae3-6dba-4bb1-bcbe-e9e0516f291c.png)
+
+![4](https://user-images.githubusercontent.com/106040998/169939090-e012ec27-2fb1-441a-9947-a8e3a469e394.png)
 
 
 # **Modul 4 Hidrodinamika 2 Dimensi**
