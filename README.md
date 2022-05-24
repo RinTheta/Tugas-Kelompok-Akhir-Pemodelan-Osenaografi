@@ -254,7 +254,7 @@ for n in range (0, Nt):
     cbar = plt.colorbar(orientation='vertical',shrink=0.95,extend='both')
     cbar.set_label(label='Concentration',size = 8)
     #plt.clim(0,100)
-    plt.title('Rizki Taqwa Putranto_26050120130050 \n t='+str(round(dt*(n+1),3))+ ', Initial condition='+str(Ic),fontsize=10)
+    plt.title('Nama_NIM \n t='+str(round(dt*(n+1),3))+ ', Initial condition='+str(Ic),fontsize=10)
     plt.xlabel('x_grid',fontsize=9)
     plt.ylabel('y_grid',fontsize=9)
     plt.axis([0, x, 0, y])
