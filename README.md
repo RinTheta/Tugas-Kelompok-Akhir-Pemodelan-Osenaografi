@@ -52,23 +52,36 @@ Pada model adveksi difusi 2 Dimensi, terdapat 2 persamaan pembangun dalam penera
 
 Adveksi Model 2D
 > Persamaan dasarnya yaitu
-> 
-![image](https://user-images.githubusercontent.com/105927463/169943453-98c3d7f7-a9f8-402e-84db-8e9010463ef9.png).
+
+
+> ![image](https://user-images.githubusercontent.com/105927463/169943453-98c3d7f7-a9f8-402e-84db-8e9010463ef9.png).
 
 Difusi Model 2D
 > Persamaan dasarnya yaitu
-> 
-![image](https://user-images.githubusercontent.com/105927463/169943703-8292b982-5006-4a8e-8c4c-48627880ac13.png)
+
+> ![image](https://user-images.githubusercontent.com/105927463/169943703-8292b982-5006-4a8e-8c4c-48627880ac13.png)
 
 Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveksi-difusi yang membentuk persamaan model 2D di alam, dimana perlu adanya diskritisasi untuk kedua persamaan tersebut.
+
+
+> ![image](https://user-images.githubusercontent.com/105927463/169943453-98c3d7f7-a9f8-402e-84db-8e9010463ef9.png).
+  
+Difusi Model 2D
+> Persamaan dasarnya yaitu
+> ![image](https://user-images.githubusercontent.com/105927463/169943703-8292b982-5006-4a8e-8c4c-48627880ac13.png)
+		
+Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveksi-difusi yang membentuk persamaan model 2D di alam, dimana perlu adanya diskritisasi untuk kedua persamaan tersebut.
+		
 
 Diskritisasi merupakan suatu metode untuk mencari solusi persamaan secara numerik dari persamaan matematis sehingga dapat dibentuk menjadi dimensi ruang dan waktu.
 Untuk Diskritisasinya dapat menggunakan metode upstream (Eksplisit) dimana persamaan beda hingga menggunakan pendekatan beda maju untuk turunan waktu dan untuk turunan ruang menggunakan dengan menggunakan arah kecepatan u.ika u > 0 maka turunan terhadap ruang menggunakan pendekatan beda mundur, sebaliknya jika u < 0 digunakan pendekatan beda maju.
 >Persamaan dari metode diskritisasi untuk suku adveksi 2D adalah sebagai berikut :
 >![image](https://user-images.githubusercontent.com/105927463/169944973-9f25a4a3-09b4-467d-9141-bf3c1dc08cc5.png)
 
+
 Dan untuk mekanisme transpor difusi  2D dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang. Indeks n untuk waktu, indeks i untuk ruang, dan koefisiesn difusi AD dianggap konstan terhadap ruangdan waktu.
 >Persamaan dari metode diskritisasi untuk suku difusi 2D adalah sebagai berikut :
+
 >![image](https://user-images.githubusercontent.com/105927463/169945106-060f17cf-d4ba-4603-a366-9749f1fb956e.png)
 
 Dan dari kedua diskritisasi berikut digabungkan untuk mendapatkan proses adveksi difusi 2D dengan hasil sebagai berikut
@@ -82,6 +95,25 @@ Untuk Pernerapan di Bidang Oseanografi itu sendiri Modul Adveksi Difusi 2D ini d
 >3.Mengetahui Persebaran kebocoran atau tumpahan minyak di lautan
 
 >4.Memodelkan penyebaran polutan yang tersebar dari hasil limbah industry dari sungai ke laut
+
+		
+Dan untuk mekanisme transpor difusi 2D dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang. Indeks n untuk waktu, indeks i untuk ruang, dan koefisiesn difusi AD dianggap konstan terhadap ruangdan waktu.
+>Persamaan dari metode diskritisasi untuk suku difusi 2D adalah sebagai berikut :
+>![image](https://user-images.githubusercontent.com/105927463/169945106-060f17cf-d4ba-4603-a366-9749f1fb956e.png)
+		
+Dan dari kedua diskritisasi berikut digabungkan untuk mendapatkan proses adveksi difusi 2D dengan hasil sebagai berikut
+>![image](https://user-images.githubusercontent.com/105927463/169945255-ffa3121e-9104-4ca1-8430-892ba357e5bb.png)
+		
+ Untuk Pernerapan di Bidang Oseanografi itu sendiri Modul Adveksi Difusi 2D ini dapat digunakan untuk
+>1.Mengetahui Persebaran Polutan di Laut dan memodelkannya
+		
+>2.Mengetahui Persebaran Nutrient di laut dan memodelkannya
+		
+>3.Mengetahui Persebaran kebocoran atau tumpahan minyak di lautan
+		
+>4.Memodelkan penyebaran polutan yang tersebar dari hasil limbah industry dari sungai ke laut
+
+
 
 ### **Penjelasan Coding**
 
@@ -109,13 +141,13 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 
 > q merupakan parameter yang menunjukan 
 
-> x dan y merupakan parameter yang menunjukkan 
+> x dan y merupakan parameter yang menunjukkan arah perubahan sudut
 
-> dt merupakan parameter yang menunjukan koefisien Delta T
+> dt merupakan parameter yang menunjukan perubahan arah sepanjang waktu
 
-> dx merupakan parameter yang menunjukan
+> dx merupakan parameter yang menunjukan arah perubuhan sepanjang x
 
-> dy merupakan parameter yang menunjukan
+> dy merupakan parameter yang menunjukan arah perubahan sepanjang y
 
 ![image](https://user-images.githubusercontent.com/102911269/169703304-f34c6edf-fde4-4075-9993-7d23a080d1ff.png)
 
@@ -123,7 +155,7 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 ### **Hasil**
 > ![ezgif com-gif-maker](https://user-images.githubusercontent.com/102911269/169705494-142fc028-55fd-4464-9595-cfb69ba51802.gif)
 
-Berdasarkan Hasil yang didapat dapat disimpulkan bahwa 
+Berdasarkan Hasil yang didapat dapat disimpulkan bahwa persebaran dari polutan pada perairan berjalan sesuai dengan nilai dari C (kecepatan aliran) dan Ad (koefisien difusi) yang ada. Semakin besar koefisien difusi, proses difusi akan terjadi lebih cepat. Sementara itu, semakin kecil  kecepatan alirannya maka proses pergerakan dari polutan akan semakin kecil. Sementara itu arah dari penyebaran polutan sangat bergantung pada nilai theta (arah gerak arus) yang berlaku pada pemodelan tersebut.  
 
 # **Modul 3 Hidrodinamika 1 Dimensi**
 ### **Materi**
@@ -140,13 +172,13 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa
 
 ### **Hasil**
 
-![1](https://user-images.githubusercontent.com/106040998/169938957-dc305df3-7c7a-4028-994e-5ac71299455c.png)
+![1 1](https://user-images.githubusercontent.com/106040998/169955243-4ab3e2f5-54a3-4c00-832f-9254afa806db.png)
 
-![2](https://user-images.githubusercontent.com/106040998/169939003-d0969581-935e-4373-a4e7-eadb93c70092.png)
+![2 2](https://user-images.githubusercontent.com/106040998/169955270-dbb5f9e7-92e2-46ff-94de-207ee9b6bda0.png)
 
-![3](https://user-images.githubusercontent.com/106040998/169939043-b17c9ae3-6dba-4bb1-bcbe-e9e0516f291c.png)
+![3 3](https://user-images.githubusercontent.com/106040998/169955315-08f10ae4-406d-41c0-87d5-6e76a49ca600.png)
 
-![4](https://user-images.githubusercontent.com/106040998/169939090-e012ec27-2fb1-441a-9947-a8e3a469e394.png)
+![4 4](https://user-images.githubusercontent.com/106040998/169955350-35d5eba3-6262-46a4-a309-ddb71f261989.png)
 
 
 # **Modul 4 Hidrodinamika 2 Dimensi**
