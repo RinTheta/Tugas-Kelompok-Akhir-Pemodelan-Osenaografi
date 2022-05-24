@@ -378,7 +378,17 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa persebaran dari polutan p
 
 # **Modul 4 Hidrodinamika 2 Dimensi**
 ## **Materi**
+Menurut Milasari _et al_. (2021), model hidrodinamika merupakan sistem model numerik umum untuk pemodelan permukaan air dan arus. Model hidrodinamika yang dikembangkan untuk mensimulasikan aliran 2D dalam satu layer fluida yang dianggap homogen secara vertikal. Terdapat dua persamaan pembangun yang mendukung model, antara lain :
+1. Persamaan Kontinuitas
+![Persamaan Kontinuitas](https://user-images.githubusercontent.com/106028435/170098798-5043602a-1cb4-4f18-bf55-71b03a4c99f0.png)
 
+2. Persamaan Momentum
+![Persamaan Momentum](https://user-images.githubusercontent.com/106028435/170098858-212e2ddd-b0c8-4375-b7ca-aab88b8b02e7.png)
+
+Pengaplikasian hidrodinamika 2D pada bidang oseanografi diantaranya adalah :
+* Pemodelan sampah plastik di laut.
+* Pemodelan gelombang oleh angin.
+* Pemodelan _Coastal Dynamics_ dan sedimentasi pantai. 
 ## **Penjelasan Coding**
 
 ![image](https://user-images.githubusercontent.com/105922284/169753571-b9ddc764-0370-453c-be02-6ab0d177787e.png)
@@ -413,6 +423,8 @@ Maka, script dapat dijalankan untuk mendapatkan hasil berupa grafik visualisasi 
 
 Berdasarkan Hasil yang didapat dapat disimpulkan bahwa terjadi korelasi antara parameter tekanan air, angin, dan suhu perairan. Angin dihasilkan oleh perbedaan tekanan dan suhu di atmosfer akibat distribusi energi radiasi matahari, tutupan awan serta dinamika disekitarnya. Angin menghantarkan kandungan panas terutama dengan proses adveksi massa air hangat ke daerah dingin dan sebaliknya (Aldrian, 2008). Ketika lautan mendingin, maka laut akan merespon dengan menghasilkan gerak konveksi vertikal yang akan mensuplai panas ke permukaan. Hal ini terjadi karena persamaan kontinuitas massa membutuhkan air dingin mengendap ke kedalaman dari permukaan tergantikan oleh massa air di bawahnya yang notabene lebih hangat. Air hangat tersebut akan menyembul ke permukaan. Proses perubahan suhu di lautan terjadi jauh lebih lambat daripada di atmosfer. Sebagai akibat maka lautan terus panas meskipun ekuinok atau titik nadir matahari telah menjauhi garis khatulistiwa.
 
+# DAFTAR PUSTAKA
+Milasari, A., D.H. Ismunarti, E. Indrayanti, F. Muldiyatno, A. Ismanto dan A. Rifai. 2021. Model Arus Permukaan Teluk 	Lampung pada Musim Peralihan II dengan Pendekatan Hidrodinamika. _Buletin Oseanografi Marina_. 10(3):259-268.
 
 # PENUTUP
 
