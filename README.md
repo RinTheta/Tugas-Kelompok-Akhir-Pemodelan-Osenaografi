@@ -40,6 +40,42 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 
 # **Modul 1 Adveksi Difusi 1 Dimensi**
 ### **Materi**
+Persamaan Adveksi merupakan salah satu persamaan diferensial parsial yang memodelkan pergerakan konsentrat dalam cairan yang mengalir, dengan asumsi konsentrat tersebut tidak mengalami proses difusi di dalam cairan. Adveksi berkaitan erat dengan aktivitas atau pergerakan suatu benda dari suatu tempat ke tempat lainnya untuk waktu tertentu. Persamaan adveksi merupakan bentuk khusus dari persamaan diferensial untuk hukum kekekalan.
+Persamaan umum Adveksi 1D:![image](https://user-images.githubusercontent.com/106157138/170030902-792d5b52-3b81-4150-8d0c-e9f9dc7b392e.png)
+dimana:
+F : Konsentrasi zat pelarut (mg/L)
+u : Kecepatan
+x : ruang sumbu horisontal (meter)
+t : waktu (detik)
+
+Dalam pemodelan numerik secara umum dibagi menjadi 2 pendekatan yaitu eksplisit dan implisit. metode eksplisit dibagi menjadi 3 yaitu:
+
+FTCS (Forward in Time Central in Space)
+Metode FTCS merupakan gabungan dari selisih maju terhadap waktu dan selisih pusat terhadap ruang. Solusi FTCS juga termasuk ke dalam solusi stabil bersyarat.
+
+Syarat kestabilan:
+![image](https://user-images.githubusercontent.com/106157138/170031298-746aac0f-3545-4e54-86be-197e7243b6d7.png)
+
+Leapfrog (CTCS)
+Metode beda hingga ini merupakan perluasan dari metode beda tengah (central difference) terhadap ruang dan waktu. Skema Leapfrog didapatkan dari turunan deret taylor, ini adalah skema konsisten. Leapfrog ini akan konsisten apabila nilai C ≤1.
+![image](https://user-images.githubusercontent.com/106157138/170031458-cb0c0ea8-8cf0-4eb7-949c-3e148aa6d0db.png)
+
+Upstream
+Metode ini menggunakan pendekatan beda maju untuk turunan waktu, sedangkan untuk turunan terhadap ruang dilakukan dengan melihat arah kecepatan u. jika > 0 maka turunan terhadap menggunakan pendejatan beda mundur. Sebaliknya jika u < 0 maka digunakan pendekatan beda maju. Stabilitas metode upstream adalah sebagai berikut:
+Jika u > 0, turunan terhadap ruang menggunakan pendekatan beda mundur.
+![image](https://user-images.githubusercontent.com/106157138/170031798-bfe073a0-9a8a-4622-aa41-03ed5f05f9f8.png)
+dengan skema langkah sebagai berikut ![image](https://user-images.githubusercontent.com/106157138/170031955-3f438c62-f079-45aa-b55b-575ba04cd345.png)
+Jika u < 0, turunan terhadap ruang menggunakan pendekatan beda maju.
+![image](https://user-images.githubusercontent.com/106157138/170032056-826a6338-8771-4879-9647-54804fbf3697.png)
+dengan skema langkah sebagai berikut ![image](https://user-images.githubusercontent.com/106157138/170032169-74136452-c837-479a-999c-4810aedcb70d.png)
+
+Difusi 1D
+Persamaan difusi merupakan persamaan diferensial parsial linier yang merupakan representasi berpindahnya zat dalam pelarut berkonsentrasi tinggi ke bagian yang berkonsentrasi rendah. Zat meyebar karena adanya gradien konsentrasi. Proses ini akan terjadi sampai seluruh partikel tersebar luas secara merata atau mencapai keadaan setimbang yaitu dimana perpindahan molekul tetap terjadi namun tidak ada perubahan konsentrasi. Faktor-faktor yang mempengaruhi kecepatan difusi diantaranya ukuran partikel, luas area, jarak dan suhu, dan ketebalan membran. Pengaplikasian di oseanografi salah satunya dalam tumpahan minyak (oil spill).
+
+Dalam metode ini, deskritisasi dilakukan secara eksplisit (FTCS) dimana syarat batas terpenuhi=overflow
+![image](https://user-images.githubusercontent.com/106157138/170033374-825d8423-f6ef-4023-9e1b-1b48ce4b6fa2.png)
+
+
 
 ### **Hasil**
 
@@ -117,11 +153,7 @@ Dan dari kedua diskritisasi berikut digabungkan untuk mendapatkan proses adveksi
 
 ### **Penjelasan Coding**
 
-```
-import matplotlib.pyplot as plt
-import numpy as np
-import sys
-```
+![image](https://user-images.githubusercontent.com/102911269/169702805-d1f21fcd-6bcc-48a0-a9ad-8f810ef5fe25.png)
 
 Pada modul ini library yang digunakan adalah library Matplotlib, Numpy, dan sys
 > Library Matplotlib merupakan library yang digunakan untuk menjalankan visualisasi data dan pustaka plot grafis untuk Python dan ekstensi numeriknya NumPy
@@ -130,33 +162,11 @@ Pada modul ini library yang digunakan adalah library Matplotlib, Numpy, dan sys
 
 > Library sys berguna untuk menyediakan berbagai fungsi dan variabel yang digunakan untuk memanipulasi bagian yang berbeda dari lingkungan runtime Python
 
-```
-def percentage(part, whole):
-    percentage = 100 * float(part)/float(whole)
-    return str(round(percentage,2)) + "x"
-```
+![image](https://user-images.githubusercontent.com/102911269/169703324-3524c1cd-980b-459d-94d2-0d4be1c8a9ab.png)
 
 fungsi def digunakan untuk mendefinisikan penggunaan angka dalam satuan persen desimal
 
-```
-#Masukan Parameter Awal
-C = 0.05
-ad = 1.05
-
-#Arah Arus
-#theta = 5
-#theta = 65
-#theta = 140
-theta = 320
-
-#Parameter Lanjutan
-q = 0.95 
-x = 300 
-y = 300 
-dt = 0.5 
-dx = 3 
-dy = 3 
-```
+![image](https://user-images.githubusercontent.com/102911269/169703150-ace83883-daae-4011-aca6-509d71e9a1b8.png)
 
 Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, dan dy
 > C merupakan kecepatan aliran
@@ -175,102 +185,8 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 
 > dy merupakan parameter yang menunjukan arah perubahan sepanjang y
 
-```
-#Lama Simulasi
-Tend = 1
-#Tend = 0,5
-dt = 0.5
+![image](https://user-images.githubusercontent.com/102911269/169703304-f34c6edf-fde4-4075-9993-7d23a080d1ff.png)
 
-#Polutan
-px = 150
-py = 130
-Ic = 550
-
-#Perhitungan U dan V
-u = C * np.sin(theta*np.pi/180)
-v = C * np.cos(theta*np.pi/180)
-dt_count = 1/((abs(u)/(q*dx))+(abs(v)/(q*dy))+(2*ad/(q*dx**2))+(2*ad/(q*dy*2)))
-
-Nx = int(x/dx)  #number of mesh in x direction
-Ny = int(y/dy)  #number of mesh in y direction
-Nt = int(Tend/dt)
-
-#perhitungan titik polutan di buang
-px1 = int(px/dx)
-py1 = int(py/dy)
-
-#fungsi disederhanakan
-lx = u*dt/dx
-ly = v*dt/dy
-ax = ad*dt/dx**2
-ay = ad*dt/dy**2
-cfl = (2*ax + 2*ay + abs(lx) + abs(ly))  #syarat kestabilan CFL
-
-#perhitungan cfl
-if cfl >= q:
-    print('CFL Violated, please use dt :'+str(round(dt_count,4)))
-    sys.exit ()
-#%%
-```
-
-Nilai dari Tend menunjukkan banyaknya jumlah simulasi dalam satuan 1 satuan waktu
-
-```
-#pembuatan grid 
-x_grid = np.linspace(0-dx, x+dx, Nx+2) #ghostnode boundary
-y_grid = np.linspace(0-dx, y+dy, Ny+2) #ghostnode boundary
-t = np.linspace(0, Tend, Nt+1)
-x_mesh, y_mesh = np.meshgrid(x_grid,y_grid)
-F = np.zeros((Nt+1, Ny+2, Nx+2))
-
-#kondisi awal
-F[0,py1,px1]=Ic
-#%%
-
-#Iterasi
-for n in range (0, Nt):
-    for i in range (1,Ny+1):
-        for j in range (1, Nx+1):
-         F[n+1,i,j]=((F[n,i,j]*(1-abs(lx)-abs(ly))) + \
-                (0.5*(F[n,i-1,j]*(ly+abs(ly)))) + \
-                (0.5*(F[n,i+1,j]*(abs(ly)-ly))) + \
-                (0.5*(F[n,i,j-1]*(lx+abs(lx)))) + \
-                (0.5*(F[n,i,j+1]*(abs(lx)-lx))) + \
-                (ay*(F[n,i+1,j]-2*(F[n,i,j])+F[n,i-1,j])) +\
-                (ax*(F[n,i,j+1]-2*(F[n,i,j])+F[n,i,j-1])))
-    #syarat batas
-    F[n+1,0,:] = 0 #bc bawah
-    F[n+1,:,0] = 0 #bc kiri
-    F[n+1,Ny+1,:] = 0 #bc atas
-    F[n+1,:,Nx+1] = 0 #bc kanan
-#%%
-
-    #Output Gambar
-    plt.clf()
-    plt.pcolor(x_mesh, y_mesh, F[n+1, :, :], cmap = 'jet',shading='auto',edgecolor='k')
-    cbar=plt.colorbar(orientation='vertical',shrink=0.95,extend='both')
-    plt.clf()
-    plt.pcolor(x_mesh,y_mesh,F[n+1,:,:],cmap='jet',shading='auto',edgecolor='k')
-    cbar = plt.colorbar(orientation='vertical',shrink=0.95,extend='both')
-    cbar.set_label(label='Concentration',size = 8)
-    #plt.clim(0,100)
-    plt.title('Nama_NIM \n t='+str(round(dt*(n+1),3))+ ', Initial condition='+str(Ic),fontsize=10)
-    plt.xlabel('x_grid',fontsize=9)
-    plt.ylabel('y_grid',fontsize=9)
-    plt.axis([0, x, 0, y])
-    #plt.pause(0.01)
-    plt.savefig(str(n+1)+'.jpg', dpi=300)
-    plt.pause(0.01)
-    plt.close()
-    print('running timestep ke:' +str(n+1) + ' dari:' +str(Nt) + '('+ percentage(n+1,Nt)+')')
-    print('Nilai CFL:' +str(cfl) + 'dengan arah: ' +str(theta))
-    print( 'Nilai u: ' +str(u))
-    print( 'Nilai v: ' +str(v))
-    print( 'Nilai ax: ' +str(ax))
-    print( 'Nilai ay: ' +str(ay))
-    print( 'Nilai lx: ' +str(lx))
-    print( 'Nilai ly: ' +str(ly))
-```
 
 ### **Hasil**
 > ![ezgif com-gif-maker](https://user-images.githubusercontent.com/102911269/169705494-142fc028-55fd-4464-9595-cfb69ba51802.gif)
