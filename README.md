@@ -96,6 +96,12 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa
 
 ![2022-05-24_093539](https://user-images.githubusercontent.com/106040998/169937453-4cb0cc42-4fde-4aac-8710-3eb123f72168.png)
 
+![2022-05-24_094215](https://user-images.githubusercontent.com/106040998/169937924-ab936413-a85b-4fbd-9da2-3e6979bbfbec.png)
+
+![2022-05-24_094420](https://user-images.githubusercontent.com/106040998/169938156-db82f5b4-6cf1-44e2-bbaa-328fc461cb24.png)
+
+![2022-05-24_094612](https://user-images.githubusercontent.com/106040998/169938443-7eed74f5-a8c6-41b3-abd4-80137b0fdf92.png)
+
 
 ### **Hasil**
 
