@@ -28,7 +28,7 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 3. Enter untuk run tunggu hingga selesai dan ulangi langkah yang sama untuk library lainnya
 > ![image](https://user-images.githubusercontent.com/102911269/169704754-446896b6-30f6-4f09-990b-cec8387c8547.png)
 
-**Daftar Library yang Digunakan**
+## **Daftar Library yang Digunakan**
 
 > Matplotlib = ```pip install matplotlib```
 
@@ -39,70 +39,92 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 > Siphon = ```pip install siphon```
 
 # **Modul 1 Adveksi Difusi 1 Dimensi**
-### **Materi**
+## **Materi**
+
 Persamaan Adveksi merupakan salah satu persamaan diferensial parsial yang memodelkan pergerakan konsentrat dalam cairan yang mengalir, dengan asumsi konsentrat tersebut tidak mengalami proses difusi di dalam cairan. Adveksi berkaitan erat dengan aktivitas atau pergerakan suatu benda dari suatu tempat ke tempat lainnya untuk waktu tertentu. Persamaan adveksi merupakan bentuk khusus dari persamaan diferensial untuk hukum kekekalan.
-Persamaan umum Adveksi 1D:![image](https://user-images.githubusercontent.com/106157138/170030902-792d5b52-3b81-4150-8d0c-e9f9dc7b392e.png)
+
+### **Persamaan umum Adveksi 1D:**
+
+![image](https://user-images.githubusercontent.com/106157138/170030902-792d5b52-3b81-4150-8d0c-e9f9dc7b392e.png)
+
 dimana:
+
 F : Konsentrasi zat pelarut (mg/L)
+
 u : Kecepatan
+
 x : ruang sumbu horisontal (meter)
+
 t : waktu (detik)
 
 Dalam pemodelan numerik secara umum dibagi menjadi 2 pendekatan yaitu eksplisit dan implisit. metode eksplisit dibagi menjadi 3 yaitu:
 
-FTCS (Forward in Time Central in Space)
+### **FTCS (Forward in Time Central in Space)**
+
 Metode FTCS merupakan gabungan dari selisih maju terhadap waktu dan selisih pusat terhadap ruang. Solusi FTCS juga termasuk ke dalam solusi stabil bersyarat.
 
 Syarat kestabilan:
+
 ![image](https://user-images.githubusercontent.com/106157138/170031298-746aac0f-3545-4e54-86be-197e7243b6d7.png)
 
-Leapfrog (CTCS)
+### **Leapfrog (CTCS)**
+
 Metode beda hingga ini merupakan perluasan dari metode beda tengah (central difference) terhadap ruang dan waktu. Skema Leapfrog didapatkan dari turunan deret taylor, ini adalah skema konsisten. Leapfrog ini akan konsisten apabila nilai C ≤1.
+
 ![image](https://user-images.githubusercontent.com/106157138/170031458-cb0c0ea8-8cf0-4eb7-949c-3e148aa6d0db.png)
 
-Upstream
-Metode ini menggunakan pendekatan beda maju untuk turunan waktu, sedangkan untuk turunan terhadap ruang dilakukan dengan melihat arah kecepatan u. jika > 0 maka turunan terhadap menggunakan pendejatan beda mundur. Sebaliknya jika u < 0 maka digunakan pendekatan beda maju. Stabilitas metode upstream adalah sebagai berikut:
-Jika u > 0, turunan terhadap ruang menggunakan pendekatan beda mundur.
-![image](https://user-images.githubusercontent.com/106157138/170031798-bfe073a0-9a8a-4622-aa41-03ed5f05f9f8.png)
-dengan skema langkah sebagai berikut ![image](https://user-images.githubusercontent.com/106157138/170031955-3f438c62-f079-45aa-b55b-575ba04cd345.png)
-Jika u < 0, turunan terhadap ruang menggunakan pendekatan beda maju.
-![image](https://user-images.githubusercontent.com/106157138/170032056-826a6338-8771-4879-9647-54804fbf3697.png)
-dengan skema langkah sebagai berikut ![image](https://user-images.githubusercontent.com/106157138/170032169-74136452-c837-479a-999c-4810aedcb70d.png)
+### **Upstream**
 
-Difusi 1D
+Metode ini menggunakan pendekatan beda maju untuk turunan waktu, sedangkan untuk turunan terhadap ruang dilakukan dengan melihat arah kecepatan u. jika > 0 maka turunan terhadap menggunakan pendejatan beda mundur. Sebaliknya jika u < 0 maka digunakan pendekatan beda maju. Stabilitas metode upstream adalah sebagai berikut:
+
+Jika u > 0, turunan terhadap ruang menggunakan pendekatan beda mundur.
+
+![image](https://user-images.githubusercontent.com/106157138/170031798-bfe073a0-9a8a-4622-aa41-03ed5f05f9f8.png)
+
+dengan skema langkah sebagai berikut 
+
+![image](https://user-images.githubusercontent.com/106157138/170031955-3f438c62-f079-45aa-b55b-575ba04cd345.png)
+
+Jika u < 0, turunan terhadap ruang menggunakan pendekatan beda maju.
+
+![image](https://user-images.githubusercontent.com/106157138/170032056-826a6338-8771-4879-9647-54804fbf3697.png)
+
+dengan skema langkah sebagai berikut 
+
+![image](https://user-images.githubusercontent.com/106157138/170032169-74136452-c837-479a-999c-4810aedcb70d.png)
+
+### **Difusi 1D**
+
 Persamaan difusi merupakan persamaan diferensial parsial linier yang merupakan representasi berpindahnya zat dalam pelarut berkonsentrasi tinggi ke bagian yang berkonsentrasi rendah. Zat meyebar karena adanya gradien konsentrasi. Proses ini akan terjadi sampai seluruh partikel tersebar luas secara merata atau mencapai keadaan setimbang yaitu dimana perpindahan molekul tetap terjadi namun tidak ada perubahan konsentrasi. Faktor-faktor yang mempengaruhi kecepatan difusi diantaranya ukuran partikel, luas area, jarak dan suhu, dan ketebalan membran. Pengaplikasian di oseanografi salah satunya dalam tumpahan minyak (oil spill).
 
 Dalam metode ini, deskritisasi dilakukan secara eksplisit (FTCS) dimana syarat batas terpenuhi=overflow
+
 ![image](https://user-images.githubusercontent.com/106157138/170033374-825d8423-f6ef-4023-9e1b-1b48ce4b6fa2.png)
 
 
-
-### **Hasil**
-
 # **Modul 2 Adveksi Difusi 2 Dimensi**
-### **Materi**
+## **Materi**
 
 Adveksi pada pemodelan Oseanografi dapat dikatakan secara ringkas sebagai proses transportasi/ perpindahan massa suatu materi dari titik ke titik lainnya berupa aliran rata rata arus. Sedangkan Difusi merupakan proses transportasi materi dari suatu sistem ke bagian sistem yang lain sebagai hasil dari gerakan molekul acak. Difusi ini dapat dipengaruhi karena adanya kecepatan dan perbedaan konsentrasi.
 
 Pada model adveksi difusi 2 Dimensi, terdapat 2 persamaan pembangun dalam penerapannya. Yang pertama adalah persamaan pembangun adveksi dan difusi. Berikut merupakan persamaan pembangun dan diskritisasinya.
 
-Adveksi Model 2D
+### **Adveksi Model 2D**
 > Persamaan dasarnya yaitu
 
 
 > ![image](https://user-images.githubusercontent.com/105927463/169943453-98c3d7f7-a9f8-402e-84db-8e9010463ef9.png).
 
-Difusi Model 2D
+### **Difusi Model 2D**
 > Persamaan dasarnya yaitu
 
 > ![image](https://user-images.githubusercontent.com/105927463/169943703-8292b982-5006-4a8e-8c4c-48627880ac13.png)
 
 Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveksi-difusi yang membentuk persamaan model 2D di alam, dimana perlu adanya diskritisasi untuk kedua persamaan tersebut.
 
-
 > ![image](https://user-images.githubusercontent.com/105927463/169943453-98c3d7f7-a9f8-402e-84db-8e9010463ef9.png).
   
-Difusi Model 2D
+### **Difusi Model 2D**
 > Persamaan dasarnya yaitu
 > ![image](https://user-images.githubusercontent.com/105927463/169943703-8292b982-5006-4a8e-8c4c-48627880ac13.png)
 		
@@ -151,7 +173,7 @@ Dan dari kedua diskritisasi berikut digabungkan untuk mendapatkan proses adveksi
 
 
 
-### **Penjelasan Coding**
+## **Penjelasan Coding**
 
 ![image](https://user-images.githubusercontent.com/102911269/169702805-d1f21fcd-6bcc-48a0-a9ad-8f810ef5fe25.png)
 
@@ -188,15 +210,15 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 ![image](https://user-images.githubusercontent.com/102911269/169703304-f34c6edf-fde4-4075-9993-7d23a080d1ff.png)
 
 
-### **Hasil**
+## **Hasil**
 > ![ezgif com-gif-maker](https://user-images.githubusercontent.com/102911269/169705494-142fc028-55fd-4464-9595-cfb69ba51802.gif)
 
 Berdasarkan Hasil yang didapat dapat disimpulkan bahwa persebaran dari polutan pada perairan berjalan sesuai dengan nilai dari C (kecepatan aliran) dan Ad (koefisien difusi) yang ada. Semakin besar koefisien difusi, proses difusi akan terjadi lebih cepat. Sementara itu, semakin kecil  kecepatan alirannya maka proses pergerakan dari polutan akan semakin kecil. Sementara itu arah dari penyebaran polutan sangat bergantung pada nilai theta (arah gerak arus) yang berlaku pada pemodelan tersebut.  
 
 # **Modul 3 Hidrodinamika 1 Dimensi**
-### **Materi**
+## **Materi**
 
-### **Penjelasan Coding**
+## **Penjelasan Coding**
 
 ![2022-05-24_093539](https://user-images.githubusercontent.com/106040998/169937453-4cb0cc42-4fde-4aac-8710-3eb123f72168.png)
 
@@ -206,7 +228,7 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa persebaran dari polutan p
 
 
 
-### **Hasil**
+## **Hasil**
 
 ![1 1](https://user-images.githubusercontent.com/106040998/169955243-4ab3e2f5-54a3-4c00-832f-9254afa806db.png)
 
@@ -218,9 +240,9 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa persebaran dari polutan p
 
 
 # **Modul 4 Hidrodinamika 2 Dimensi**
-### **Materi**
+## **Materi**
 
-### **Penjelasan Coding**
+## **Penjelasan Coding**
 
 ![image](https://user-images.githubusercontent.com/105922284/169753571-b9ddc764-0370-453c-be02-6ab0d177787e.png)
 
@@ -249,7 +271,7 @@ Maka, script dapat dijalankan untuk mendapatkan hasil berupa grafik visualisasi 
 
 ![image](https://user-images.githubusercontent.com/105922284/169759306-d75c97c2-5877-4042-ab0f-37d8ccf53beb.png)
 
-### **Hasil**
+## **Hasil**
 > ![image](https://user-images.githubusercontent.com/105922284/169754981-ffc8c40c-abd2-4348-a2de-82d2e68add8e.png)
 
 Berdasarkan Hasil yang didapat dapat disimpulkan bahwa terjadi korelasi antara parameter tekanan air, angin, dan suhu perairan. Angin dihasilkan oleh perbedaan tekanan dan suhu di atmosfer akibat distribusi energi radiasi matahari, tutupan awan serta dinamika disekitarnya. Angin menghantarkan kandungan panas terutama dengan proses adveksi massa air hangat ke daerah dingin dan sebaliknya (Aldrian, 2008). Ketika lautan mendingin, maka laut akan merespon dengan menghasilkan gerak konveksi vertikal yang akan mensuplai panas ke permukaan. Hal ini terjadi karena persamaan kontinuitas massa membutuhkan air dingin mengendap ke kedalaman dari permukaan tergantikan oleh massa air di bawahnya yang notabene lebih hangat. Air hangat tersebut akan menyembul ke permukaan. Proses perubahan suhu di lautan terjadi jauh lebih lambat daripada di atmosfer. Sebagai akibat maka lautan terus panas meskipun ekuinok atau titik nadir matahari telah menjauhi garis khatulistiwa.
@@ -257,10 +279,16 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa terjadi korelasi antara p
 
 # PENUTUP
 
-Demikian repositori ini kami buat untuk memenuhi Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi 2022 Departemen Oseanografi Fakultas Perikanan dan Ilmu Kelautan. Kami selaku authors berharap dengan repositori ini dapat membantu pembaca dalam menyelesaikan permasalahan pada modul-modul yang telah kami jelaskan, mulai dari model adveksi-difusi hingga model hidrodinamika. Authors juga mengucapkan terima kasih kepada :
+Demikian repositori ini kami buat untuk memenuhi Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi 2022 Departemen Oseanografi Fakultas Perikanan dan Ilmu Kelautan. Kami selaku authors berharap dengan repositori ini dapat membantu pembaca dalam menyelesaikan permasalahan pada modul-modul yang telah kami jelaskan, mulai dari model adveksi-difusi hingga model hidrodinamika. Kami selaku authors memohon maaf yang sebesar-besarnya apabila terdapat kekurangan dan kesalahan pada repository ini. Authors juga mengucapkan terima kasih kepada :
+
 1. Dr. Aris Ismanto, S.Si, M.Si. selaku dosen pengampu mata kuliah Metode Numerik
 2. Rikha Widiaratih, S.Si, M.Si. selaku dosen pengampu mata kuliah Metode Numerik
 3. Prof. Dr. Denny Nugroho Sugianto, S.T., M.Si. selaku dosen pengampu matakuliah Pemodelan Oseanografi.
 4. Dr. Elis Indrayanti, S.T., M.Si. selaku dosen pengampu matakuliah Pemodelan Oseanografi.
 5. Tim asisten Praktikum Pemodelan Oseanografi 2022 yang membimbing authors dalam pengerjaan tugas akhir ini
 6. Seluruh mahasiswa Oseanografi 2020 yang turut mendukung tersusunnya repositori ini
+
+Hormat Kami
+																			
+
+Authors
