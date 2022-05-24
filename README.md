@@ -126,6 +126,7 @@ Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveks
   
 ### **Difusi Model 2D**
 > Persamaan dasarnya yaitu
+
 > ![image](https://user-images.githubusercontent.com/105927463/169943703-8292b982-5006-4a8e-8c4c-48627880ac13.png)
 		
 Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveksi-difusi yang membentuk persamaan model 2D di alam, dimana perlu adanya diskritisasi untuk kedua persamaan tersebut.
@@ -134,6 +135,7 @@ Kedua persamaan diatas merupakan persamaan umum yang menggambarkan proses adveks
 Diskritisasi merupakan suatu metode untuk mencari solusi persamaan secara numerik dari persamaan matematis sehingga dapat dibentuk menjadi dimensi ruang dan waktu.
 Untuk Diskritisasinya dapat menggunakan metode upstream (Eksplisit) dimana persamaan beda hingga menggunakan pendekatan beda maju untuk turunan waktu dan untuk turunan ruang menggunakan dengan menggunakan arah kecepatan u.ika u > 0 maka turunan terhadap ruang menggunakan pendekatan beda mundur, sebaliknya jika u < 0 digunakan pendekatan beda maju.
 >Persamaan dari metode diskritisasi untuk suku adveksi 2D adalah sebagai berikut :
+
 >![image](https://user-images.githubusercontent.com/105927463/169944973-9f25a4a3-09b4-467d-9141-bf3c1dc08cc5.png)
 
 
