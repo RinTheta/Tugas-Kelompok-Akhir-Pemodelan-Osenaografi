@@ -108,13 +108,13 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 
 > q merupakan parameter yang menunjukan 
 
-> x dan y merupakan parameter yang menunjukkan 
+> x dan y merupakan parameter yang menunjukkan arah perubahan sudut
 
-> dt merupakan parameter yang menunjukan koefisien Delta T
+> dt merupakan parameter yang menunjukan perubahan arah sepanjang waktu
 
-> dx merupakan parameter yang menunjukan
+> dx merupakan parameter yang menunjukan arah perubuhan sepanjang x
 
-> dy merupakan parameter yang menunjukan
+> dy merupakan parameter yang menunjukan arah perubahan sepanjang y
 
 ![image](https://user-images.githubusercontent.com/102911269/169703304-f34c6edf-fde4-4075-9993-7d23a080d1ff.png)
 
