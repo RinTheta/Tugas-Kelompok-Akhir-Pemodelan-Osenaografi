@@ -94,6 +94,9 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa
 
 ### **Penjelasan Coding**
 
+![2022-05-24_093539](https://user-images.githubusercontent.com/106040998/169937453-4cb0cc42-4fde-4aac-8710-3eb123f72168.png)
+
+
 ### **Hasil**
 
 
