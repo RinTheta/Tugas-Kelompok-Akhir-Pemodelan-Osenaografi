@@ -188,4 +188,10 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa terjadi korelasi antara p
 
 # PENUTUP
 
-Demikianlah repository ini dibuat
+Demikian repositori ini kami buat untuk memenuhi Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi 2022 Departemen Oseanografi Fakultas Perikanan dan Ilmu Kelautan. Kami selaku authors berharap dengan repositori ini dapat membantu pembaca dalam menyelesaikan permasalahan pada modul-modul yang telah kami jelaskan, mulai dari model adveksi-difusi hingga model hidrodinamika. Authors juga mengucapkan terima kasih kepada :
+1. Dr. Aris Ismanto, S.Si, M.Si. selaku dosen pengampu mata kuliah Metode Numerik
+2. Rikha Widiaratih, S.Si, M.Si. selaku dosen pengampu mata kuliah Metode Numerik
+3. Prof. Dr. Denny Nugroho Sugianto, S.T., M.Si. selaku dosen pengampu matakuliah Pemodelan Oseanografi.
+4. Dr. Elis Indrayanti, S.T., M.Si. selaku dosen pengampu matakuliah Pemodelan Oseanografi.
+5. Tim asisten Praktikum Pemodelan Oseanografi 2022 yang membimbing authors dalam pengerjaan tugas akhir ini
+6. Seluruh mahasiswa Oseanografi 2020 yang turut mendukung tersusunnya repositori ini
