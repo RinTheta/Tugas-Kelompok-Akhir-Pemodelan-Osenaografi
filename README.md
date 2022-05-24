@@ -122,7 +122,7 @@ Masukan parameter yang digunakan adalah C, ad, arah arus, dan q, x, y, dt, dx, d
 ### **Hasil**
 > ![ezgif com-gif-maker](https://user-images.githubusercontent.com/102911269/169705494-142fc028-55fd-4464-9595-cfb69ba51802.gif)
 
-Berdasarkan Hasil yang didapat dapat disimpulkan bahwa 
+Berdasarkan Hasil yang didapat dapat disimpulkan bahwa persebaran dari polutan pada perairan berjalan sesuai dengan nilai dari C (kecepatan aliran) dan Ad (koefisien difusi) yang ada. Semakin besar koefisien difusi, proses difusi akan terjadi lebih cepat. Sementara itu, semakin kecil  kecepatan alirannya maka proses pergerakan dari polutan akan semakin kecil. Sementara itu arah dari penyebaran polutan sangat bergantung pada nilai theta (arah gerak arus) yang berlaku pada pemodelan tersebut.  
 
 # **Modul 3 Hidrodinamika 1 Dimensi**
 ### **Materi**
