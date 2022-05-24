@@ -1,7 +1,7 @@
 # **Tugas Kelompok Akhir Pemodelan Oseanografi**
 Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi tahun 2022. Bahasa pemograman yang digunakan dalam repositori ini adalah bahasa pemograman Python yang dapat dikerjakan pada text editor Google Colaboratory, Visual Studio Code  dan Jupyter Notebook. Modul yang digunakan pada repositori ini adalah matplotlib, numpy, dan sys.
 
-# **Kelompok 22**
+# **Kelompok 22** 
 1. Agustia Cahyaningtyas - 26050120130094
 2. Dzaki Al Furqon - 26050120140160
 3. Raid Arjun Permana - 26050120140139
@@ -184,3 +184,8 @@ Maka, script dapat dijalankan untuk mendapatkan hasil berupa grafik visualisasi 
 > ![image](https://user-images.githubusercontent.com/105922284/169754981-ffc8c40c-abd2-4348-a2de-82d2e68add8e.png)
 
 Berdasarkan Hasil yang didapat dapat disimpulkan bahwa terjadi korelasi antara parameter tekanan air, angin, dan suhu perairan. Angin dihasilkan oleh perbedaan tekanan dan suhu di atmosfer akibat distribusi energi radiasi matahari, tutupan awan serta dinamika disekitarnya. Angin menghantarkan kandungan panas terutama dengan proses adveksi massa air hangat ke daerah dingin dan sebaliknya (Aldrian, 2008). Ketika lautan mendingin, maka laut akan merespon dengan menghasilkan gerak konveksi vertikal yang akan mensuplai panas ke permukaan. Hal ini terjadi karena persamaan kontinuitas massa membutuhkan air dingin mengendap ke kedalaman dari permukaan tergantikan oleh massa air di bawahnya yang notabene lebih hangat. Air hangat tersebut akan menyembul ke permukaan. Proses perubahan suhu di lautan terjadi jauh lebih lambat daripada di atmosfer. Sebagai akibat maka lautan terus panas meskipun ekuinok atau titik nadir matahari telah menjauhi garis khatulistiwa.
+
+
+# PENUTUP
+
+Demikianlah repository ini dibuat
