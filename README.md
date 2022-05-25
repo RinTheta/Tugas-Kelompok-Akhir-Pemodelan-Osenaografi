@@ -420,12 +420,30 @@ Kedua solusi analitik tersebut diatas  akan digunakan sebagai nilai awal dan sya
 
 ## **Penjelasan Coding**
 
+Input Library
 ![2022-05-24_093539](https://user-images.githubusercontent.com/106040998/169937453-4cb0cc42-4fde-4aac-8710-3eb123f72168.png)
 
+Pada modul ini library yang digunakan yaitu matplotlib dan numpy
+Library Matplotlib merupakan library yang digunakan untuk menjalankan visualisasi data dan pustaka plot grafis untuk Python dan ekstensi numeriknya NumPy
+Library Numpy digunakan sebagai ekstensi untuk melakukan berbagai macam operasi matematika pada suatu array
+
+Input Parameter
 ![2022-05-24_094215](https://user-images.githubusercontent.com/106040998/169937924-ab936413-a85b-4fbd-9da2-3e6979bbfbec.png)
 
-![kec arus dalam waktu](https://user-images.githubusercontent.com/106040998/169938817-717bda93-9b08-48f0-9211-6a5c66ac1f1d.png)
+Pemodelan Hidrodinamika 1D
+![hidrodinamika](https://user-images.githubusercontent.com/106040998/170171959-ab4798ff-95fc-4f30-b7b1-07ac16ec8d95.png)
 
+Pembuatan Grafik Perubahan Kecepatan Arus Dalam Grid Tertentu di Sepanjang Waktu
+![SATU](https://user-images.githubusercontent.com/106040998/170172147-5c94f8c1-c8bf-401f-a7e0-4c350d0a8f64.png)
+
+Pembuatan Grafik Perubahan Elevasi Permukaan Air Dalam Grid Tertentu di Sepanjang Waktu
+![DUA](https://user-images.githubusercontent.com/106040998/170172258-7e57ec3f-0947-4915-af4c-cce71e27c553.png)
+
+Pembuatan Grafik Perubahan Kecepatan Arus Dalam Waktu Tertentu di Sepanjang Grid
+![TIGA](https://user-images.githubusercontent.com/106040998/170172354-6065b240-8bab-4b40-af94-ce1d9baeac14.png)
+
+Pembuatan Grafik Perubahan Elevasi Permukaan Air Dalam Waktu Tertentu di Sepanjang Grid
+![EMPAT](https://user-images.githubusercontent.com/106040998/170172438-2bd7a3be-b2ff-4192-b7f1-9d709fd21796.png)
 
 
 ## **Hasil**
