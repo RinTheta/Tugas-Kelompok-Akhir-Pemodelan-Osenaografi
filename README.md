@@ -357,16 +357,19 @@ Berdasarkan Hasil yang didapat dapat disimpulkan bahwa persebaran dari polutan p
 Hidrodinamika adalah cabang dari mekanika fluida, khususnya zat cair incompressible yang di pengaruhi oleh gaya internal dan eksternal. Dalam
 hidrodinamika laut gaya-gaya yang terpenting adalah gaya gravitasi, gaya gesekan, dan gaya coriolis . Dalam oseanografi, mekanika fluida digunakan berdasarkan mekanika
 Newton yang dimodifikasi dengan memperhitungkan turbelensi.
+
 ### Persamaan - Persamaan 
 Hidrodinamika 1 Dimensi merupakan model yang dibangun dari adanya proses - proses yang mempengaruhi pergerakan massa air.hidrodinamika 1 Dimensi ini menggunakan beberapa persamaan pembangun yaitu persamaan konservasi massa/ kontinuitas ,persamaan momentum, dan persamaan penggerak fluida .selain itu terdapat persamaan pendukung yaitu menggunakan persamaan transport. untuk persamaannya dijelaskan sebagai berikut : 
 
 ### Persamaan Momentum 
 ![image](https://user-images.githubusercontent.com/106175982/170150807-89f82897-7388-4b9e-8746-0253bb155ffc.png)
+
 Persamaan momentum diturunkan dari Hukum Newton II. Hukum Newton II digunakan untuk menentukan percepatan yang dihasilkan dari gaya-gaya luar yang berpengaruh terhadap suatu massa; dalam hal kasus ini adalah massa air dalam volume kontrol.
 persamaan momentum pada hidrodinamika 1 D digunakan Dengan asumsi bahwa gesekan angin dan gesekan dasar diabaikan serta friksi horizontal dianggap kecil atau diabaikan sehingga suku-suku ini dapat dihilangkan
 
 ### persamaan konservasi massa/ kontinuitas 
 ![image](https://user-images.githubusercontent.com/106175982/170151069-f37f2107-bfb3-44f7-86b0-e7d1dbee62e5.png)
+
 Persamaan kontinuitas merupakan persamaan untuk menggambarkan perubahan massa dari fluida yang melewati suatu ruang yang tetap haruslah sama antara debit masukkan dan
 keluarannya
 
@@ -381,8 +384,11 @@ keluarannya
 
 ### Diskretisasi Model 
 persamaan model hidrodinamika sederhana 1- D dapat di diskretisasikan secara eksplisit melalui metode beda hingga menjadi :
+
 ![image](https://user-images.githubusercontent.com/106175982/170154660-e7e197d1-2f06-42e7-ad11-12092e599737.png)
+
 Deskritisasi numerik persamaan hidrodinamika 1 dimensi secara eksplisit tersebut diatas harus memenuhi kriteria stabilitas Courant-Freiderichs-Lewy (CFL) sebagai berikut 
+
 ![image](https://user-images.githubusercontent.com/106175982/170154722-08e441b8-30b9-447c-bae1-71ab1724419d.png)
 
 ### Solusi Numerik 
@@ -391,12 +397,15 @@ Penyelesaian secara numerik adalah cara pendekatan. sehingga kita hanya mendapat
 Penyelesaian Numerik yang di gunakan adalah seperti berikut : 
 
 ![image](https://user-images.githubusercontent.com/106175982/170155487-b56ce5ca-8258-4a9e-9c39-2e2b257e55b5.png)
+
 sehingga diperoleh solusi analitik kecepatan adalah :
+
 ![image](https://user-images.githubusercontent.com/106175982/170155540-4e4331cf-b6e1-4bd7-9c9f-47e6465366f4.png)
 
 Kedua solusi analitik tersebut diatas  akan digunakan sebagai nilai awal dan syarat batas numerik.
 
 ### Kelemahan Model Hidrodinamika 
+
 1.memerlukan Banyak Data
 2. Data rawan bocor 
 3. memiliki waktu simulasi yang lama 
@@ -494,7 +503,7 @@ Demikian repositori ini kami buat untuk memenuhi Tugas Akhir Kelompok Praktikum 
 5. Tim asisten Praktikum Pemodelan Oseanografi 2022 yang membimbing authors dalam pengerjaan tugas akhir ini
 6. Seluruh mahasiswa Oseanografi 2020 yang turut mendukung tersusunnya repositori ini
 
-Hormat Kami
+Hormat Kami,
 																			
 
 Authors
