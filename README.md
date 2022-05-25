@@ -425,7 +425,8 @@ Kedua solusi analitik tersebut diatas  akan digunakan sebagai nilai awal dan sya
 ![2022-05-24_093539](https://user-images.githubusercontent.com/106040998/169937453-4cb0cc42-4fde-4aac-8710-3eb123f72168.png)
 
 Pada modul ini library yang digunakan yaitu matplotlib dan numpy
-> Library Matplotlib merupakan library yang digunakan untuk menjalankan visualisasi data dan pustaka plot grafis untuk Python dan ekstensi numeriknya NumPy
+> Library Matplotlib merupakan library yang digunakan untuk menjalankan visualisasi data dan pustaka plot grafis untuk Python dan ekstensi numeriknya Numpy
+
 > Library Numpy digunakan sebagai ekstensi untuk melakukan berbagai macam operasi matematika pada suatu array
 
 ### **Input Parameter**
